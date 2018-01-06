@@ -1,0 +1,5 @@
+I use this command because i had this error that don't allow push 
+fatal: refusing to merge unrelated histories
+
+solution:
+git pull --allow-unrelated-histories

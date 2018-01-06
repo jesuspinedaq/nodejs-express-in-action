@@ -3,9 +3,14 @@ var http = require('http');
 
 var app = express();
 
+app.use(function(req, res, next){
+    console.log("In comes a " + req.method + " to " + req.url);
+    next();
+})
+
 app.use(function(req,res){
-    console.log('Income request to:', req.url);
-    res.end('hello');
+    res.writeHead(200, {"content-type":"text/plain"})
+    res.end('Hello world');
 });
 
 http.createServer(app)
