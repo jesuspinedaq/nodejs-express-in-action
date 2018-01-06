@@ -3,3 +3,8 @@ fatal: refusing to merge unrelated histories
 
 solution:
 git pull --allow-unrelated-histories
+
+morgan: log
+
+nodemon: restart automaticaly the server
+
